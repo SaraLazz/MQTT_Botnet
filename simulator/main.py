@@ -21,12 +21,12 @@ def simulation(num_bots, prob_relay, num_brokers, percentage_num_brokers_per_rel
     assert results['cc_publish_brokers'] >= 1
     
 
-    #TODO: NUMBER OF CONNECTION PER PUBLISHER (avg and std)
+    #NUMBER OF CONNECTION PER PUBLISHER (avg and std)
     print("#################NUMBER OF CONNECTION PER PUBLISHER (avg and std)")
     print(f"Average number of connections for relay bots: {results['median connections of relay']:.2f} and STD number of connections for relay bots: {results['std connections of relay']:.2f}")
     print("########################################################################")
 
-    #TODO: CONCERNING SETUP COMPLEXITY
+    #CONCERNING SETUP COMPLEXITY
     print("#################CONCERNING SETUP COMPLEXITY")
     print(f"Total retries to reach regime: {results['total retries']}")
     print(f"Average attempts to regime: {results['median attempts to regime']:.2f} and STD attempts to regime: {results['std attempts to regime']:.2f}")
@@ -34,12 +34,12 @@ def simulation(num_bots, prob_relay, num_brokers, percentage_num_brokers_per_rel
     print("########################################################################")
 
 
-    #TODO:CONCERNING THE PATH LENGHT
+    #CONCERNING THE PATH LENGHT
     print("#################CONCERNING THE PATH LENGHT")
     print(f"Average hops to C&C: {results['median hops to CC']:.2f} and STD hops to C&C: {results['std hops to CC']:.2f}")
     print("########################################################################")
 
-    #TODO: CONCERNING RESISTANCE AGAINST TAKEDOWN ATTEMPTS
+    #CONCERNING RESISTANCE AGAINST TAKEDOWN ATTEMPTS
     print("#################CONCERNING RESISTANCE AGAINST TAKEDOWN ATTEMPTS")
     print(f"Average number of relay per broker: {results['median relay per broker']:.2f} and STD number of relay per broker: {results['std relay per broker']:.2f}")
     print(f"Average number of remaining relays per brokers: {results['median number of remaining relay in brokers']:.2f} and STD number of remaining relays per brokers: {results['std number of remaining relay in brokers']:.2f}")
