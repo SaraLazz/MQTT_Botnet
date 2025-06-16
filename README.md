@@ -45,6 +45,24 @@ Each scenario produces a `results.csv` file summarizing the outcomes across `NUM
 The CSV files contain various performance and resilience metrics, described below.
 
 
+## Measured Metrics
+
+Through this simulator we computed the following metrics:
+
+### Connectivity Metrics
+
+Code	Description
+c1	Average number of brokers served by each relay bot as an active publisher
+c2	Average number of brokers served by the C&C as an active publisher
+c3	Average number of publishers discarded before reaching the steady state
+c4	Average number of hops (in terms of brokers) between a bot and the C&C
+
+### Resilience Metrics
+
+Code	Description
+r1	Average number of relay bots per broker that are not discarded before reaching the steady state
+r2	Average minimum number of collaborating brokers required to identify the C&C via intersection
+r3	Average number of randomly selected brokers required to identify the C&C via intersection
 
 
 
